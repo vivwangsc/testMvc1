@@ -65,6 +65,7 @@ public class testMain {
     public void testJdbc()
     {
         System.out.println("let's begin");
+        System.out.println("let's begin again");
         jdbcTemplate.query("select * from sys_user", new RowCallbackHandler() {
             public void processRow(ResultSet resultSet) throws SQLException {
                 System.out.println(resultSet.getString("name"));
