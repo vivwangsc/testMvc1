@@ -6,7 +6,7 @@
 import com.alibaba.fastjson.JSON;
 import com.bluewise.model.SysUser;
 import com.bluewise.services.SysUserService;
-import com.sun.javafx.tools.packager.Log;
+//import com.sun.javafx.tools.packager.Log;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -64,13 +64,13 @@ public class testMain {
     @Test
     public void testJdbc()
     {
-        Log.info("let's begin");
+        System.out.println("let's begin");
         jdbcTemplate.query("select * from sys_user", new RowCallbackHandler() {
             public void processRow(ResultSet resultSet) throws SQLException {
                 System.out.println(resultSet.getString("name"));
             }
         });
-        Log.info("test end");
+        System.out.println("test end");
     }
 
 //    /**
