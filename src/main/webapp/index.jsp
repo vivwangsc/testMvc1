@@ -8,8 +8,5 @@
     out.print(s + "<br/>");
     s = getServletConfig().getServletContext().getInitParameter("para111");
     out.print("application init para is:" + s + "<br/>");
-    
-
-
 %>
 </html>
